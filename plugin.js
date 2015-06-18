@@ -4,7 +4,7 @@ exports.for = function (API) {
 
 	var exports = {};
 
-	exports.normalize = function (config) {
+	exports.PLComponent = function (config, groupConfig) {
 
 		// TODO: Validate input config. Complete missing data. Generate uniform output config.
 
@@ -23,7 +23,7 @@ exports.for = function (API) {
 		}
 
 		return {
-			"pinf.logic-for-dns~0": validatedConfig
+			"$pinf.logic-for-dns~0": validatedConfig
 		};
 	}
 
